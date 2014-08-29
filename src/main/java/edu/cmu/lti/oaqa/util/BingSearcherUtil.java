@@ -13,7 +13,6 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-
 package edu.cmu.lti.oaqa.util;
 
 import java.io.BufferedReader;
@@ -123,7 +122,7 @@ public class BingSearcherUtil {
 	 * Parses XML and extract results
 	 */
 
-	public static List<SearchResult> ProcessResponse(Document doc, String query)
+	public static ArrayList<SearchResult> ProcessResponse(Document doc, String query)
 			throws XPathExpressionException {
 		factory = XPathFactory.newInstance();
 		xpath = factory.newXPath();
@@ -155,7 +154,7 @@ public class BingSearcherUtil {
 
 		NodeList nodes = (NodeList) xpath.evaluate(
 				"/default:feed/default:entry", doc, XPathConstants.NODESET);
-		List<SearchResult> Reply = new ArrayList<SearchResult>();
+		ArrayList<SearchResult> Reply = new ArrayList<SearchResult>();
 
 		for (int i = 0; i < nodes.getLength(); i++) {
 			try {
