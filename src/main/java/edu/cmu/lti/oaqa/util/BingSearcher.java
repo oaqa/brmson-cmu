@@ -15,12 +15,17 @@
  */
 package edu.cmu.lti.oaqa.util;
 
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Hashtable;
-import java.util.List;
 
 import edu.cmu.lti.oaqa.util.WebSearchCache;
+
+/**
+ * A class to query bing via Bing API.
+ * 
+ * @author Leonid Boytsov
+ *
+ */
 
 public class BingSearcher {
   private String              mCacheId  = "Bing";

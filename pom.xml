@@ -75,23 +75,24 @@
 			<version>1.0.1</version>
 		</dependency>
 
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.5</version>
+    </dependency>
 
-        <!-- To connect source expansion server-->
-		<dependency>
-			<groupId>org.glassfish.jersey.core</groupId>
-			<artifactId>jersey-client</artifactId>
-			<version>2.7</version>
-		</dependency>	
-		<dependency>
-			<groupId>org.glassfish.jersey.connectors</groupId>
-			<artifactId>jersey-grizzly-connector</artifactId>
-			<version>2.7</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-moxy</artifactId>
-			<version>2.7</version>
-		</dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.5</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.2</version>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
